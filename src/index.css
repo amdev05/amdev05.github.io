@@ -1,68 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:wght@300;400;600;700;800&display=swap");
+
+@import "tailwindcss";
+@theme {
+  --color-accent: #b02fc2;
+  --spacing-global: 1080px;
+  --spacing-mobile: 24px;
+  --font-league-spartan: "League Spartan", "sans-serif";
+  --animation-spin-slow: spin 10s linear infinite;
+  --inset-shadow-md: inset 0.5px 0.5px 0.5px 1px rgba(0, 0, 0, 0.25);
+}
+
+@layer components {
+  .text-hover {
+    @apply bg-linear-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent transition duration-500;
+  }
+  .button-hover {
+    @apply bg-white text-slate-950;
+  }
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.my-container {
+  @apply md:mx-auto w-full lg:max-w-global md:max-w-3xl;
 }
-a:hover {
-  color: #535bf2;
+.blury {
+  @apply inset-shadow-xs bg-neutral-500/20 inset-shadow-neutral-400/20 backdrop-blur-xl;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.pause-spin {
+  animation-play-state: paused;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.object-position-project {
+  object-position: 10% 0%;
 }
