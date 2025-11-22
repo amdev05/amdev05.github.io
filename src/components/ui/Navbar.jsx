@@ -66,13 +66,13 @@ export default function Navbar() {
           </div>
 
           <div className={`hidden md:flex items-center justify-end gap-4 px-6 ${navStyle}`}>
-            <a href={DataContacts[2].link} className="text-xl" target="__blank">
+            <a href={DataContacts[2].link} className="text-xl" target="__blank" aria-label={DataContacts[2].platform}>
               {DataContacts[2].icon}
             </a>
-            <a href={DataContacts[1].link} className="text-xl" target="__blank">
+            <a href={DataContacts[1].link} className="text-xl" target="__blank" aria-label={DataContacts[1].platform}>
               {DataContacts[1].icon}
             </a>
-            <a href={DataContacts[0].link} className="text-xl" target="__blank">
+            <a href={DataContacts[0].link} className="text-xl" target="__blank" aria-label={DataContacts[0].platform}>
               {DataContacts[0].icon}
             </a>
           </div>
