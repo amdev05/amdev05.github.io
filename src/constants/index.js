@@ -7,52 +7,13 @@ export const USERDATA = {
 export const NAVIGATIONS = ["Home", "Projects", "Profile", "Activity", "Contacts"];
 
 import music from "/music/music.mp3";
-import musicImage from "../assets/images/music.png";
+import musicImage from "../assets/images/music.webp";
 export const MUSIC = {
   title: "Hinoki Wood",
   artist: "Gia Margaret",
   music: music,
   image: musicImage,
 };
-
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-export const PROJECTS = [
-  {
-    title: "Portfolio Website",
-    description: "A professional portfolio website designed to showcase your skills, projects, and experiences in a clean, modern layout.",
-    technologies: "Tailwind, React, Motion",
-    year: "2024",
-    image: project1,
-    link: "https://amdev05.github.io/portfolio2023",
-  },
-  {
-    title: "E-Commerce Page",
-    description: "A user-friendly e-commerce page offering a seamless shopping experience with sleek design and essential shopping features.",
-    technologies: "HTML, Tailwind, Javascript",
-    year: "2024",
-    image: project2,
-    link: "https://tlcweb.github.io/tlc",
-  },
-  {
-    title: "Online Invitation",
-    description: "A beautifully crafted digital wedding invitation designed to deliver an elegant and personalized touch for your big day.",
-    technologies: "HTML, Css, Javascript",
-    year: "2023",
-    image: project3,
-    link: "https://amwedd.github.io/MuhtarSyipa",
-  },
-  {
-    title: "Blogging Page",
-    description: "A minimalist blogging page for sharing your ideas, stories, and insights in a visually appealing and engaging way.",
-    technologies: "HTML, Bootstrap, Javascript",
-    year: "2025",
-    image: project4,
-    link: "",
-  },
-];
 
 // OLDIMPORTS
 
