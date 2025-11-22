@@ -27,9 +27,16 @@
 }
 .blury {
   --webkit-backdrop-filter: blur(20px);
-  @apply inset-shadow-xs bg-neutral-500/20 inset-shadow-neutral-400/20 backdrop-blur-xl;
+  @apply inset-shadow-md bg-neutral-500/30 inset-shadow-neutral-400/30 backdrop-blur-md shadow-sm;
 }
-.pause-spin {
+.blury-sm {
+  @apply bg-neutral-500/30 inset-shadow-md inset-shadow-neutral-500/40 shadow-sm;
+}
+.blury-btn {
+  @apply bg-neutral-400/30 inset-shadow-md inset-shadow-neutral-400/40 shadow-sm;
+}
+http://localhost:5173/src/assets/projects/project-2.webp
+  .pause-spin {
   animation-play-state: paused;
 }
 .object-position-project {

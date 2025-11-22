@@ -15,7 +15,7 @@ const Activity = () => {
             </p>
             <p className="mb-4 text-neutral-400">{experience.description}</p>
             {experience.technologies.map((tech, index) => (
-              <span key={index} className="mr-2 mt-4 rounded-lg inline-block  px-2 py-1 text-sm font-medium  blury text-accent">
+              <span key={index} className="mr-2 mt-4 rounded-lg inline-block  px-2 py-1 text-sm font-medium  blury-sm text-accent">
                 {tech}
               </span>
             ))}
