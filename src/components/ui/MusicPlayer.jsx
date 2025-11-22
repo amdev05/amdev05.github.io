@@ -24,7 +24,7 @@ export default function MusicPlayer({ className }) {
       setOpen(false);
     }, 8000);
 
-    console.log("haloo");
+    // console.log("haloo");
     return () => clearTimeout(timer);
   }, [open, play]);
 

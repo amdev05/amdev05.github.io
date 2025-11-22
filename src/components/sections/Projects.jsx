@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="max-w-global mx-auto space-y-8">
       {PROJECTS.map((data, index) => (
         <div className="md:relative rounded-4xl overflow-hidden" key={index}>
-          <img src={data.image} className="w-full aspect-video object-cover scale-165 -translate-x-2/9 md:scale-100 md:translate-x-0" />
+          <img src={data.image} className="w-full aspect-video object-cover scale-165 -translate-x-2/9 md:scale-100 md:translate-x-0" alt={data.title} />
           <div className="blury p-4 md:absolute md:left-4 md:top-4 md:bottom-4 md:w-2/7 md:rounded-3xl md:flex md:flex-col md:justify-center">
             <div className="flex gap-x-2 md:flex-col items-center md:items-start">
               <h3 className="font-bold lg:text-xl">{data.title}</h3>

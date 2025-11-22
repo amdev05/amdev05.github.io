@@ -54,7 +54,7 @@ export default function Navbar() {
         <nav className="max-w-global mx-auto  flex justify-between items-center">
           <a href="#home" className={`flex items-center gap-2 px-6 ${navStyle}`}>
             <img src={USERDATA.logo} alt="logo" className="size-7" />
-            <h3 className="font-semibold">{USERDATA.name}</h3>
+            <span className="font-semibold">{USERDATA.name}</span>
           </a>
 
           <div className={`hidden md:flex items-center gap-8 px-8 ${navStyle}`}>

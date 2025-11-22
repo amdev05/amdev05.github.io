@@ -33,27 +33,27 @@ function Home() {
       <section id="home" className="h-screen w-full"></section>
 
       <section id="projects" className="px-mobile py-32">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">PROJECTS</h1>
+        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">PROJECTS</h2>
         <Projects />
       </section>
 
       <section id="profile" className="px-mobile py-32">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">PROFILE</h1>
+        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">PROFILE</h2>
         <Profile />
 
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-24 mb-12">TECHNOLOGIES</h2>
+        <h3 className="text-3xl lg:text-4xl font-bold text-center mt-24 mb-12">TECHNOLOGIES</h3>
         <Tech props={TECHNOLOGIES} />
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-24 mb-12">UTILITIES</h2>
+        <h3 className="text-3xl lg:text-4xl font-bold text-center mt-24 mb-12">UTILITIES</h3>
         <Tech props={UTILITIES} />
       </section>
 
       <section className="px-mobile py-32" id="activity">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">ACTIVITY</h1>
+        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">ACTIVITY</h2>
         <Activity />
       </section>
 
       <section id="contacts" className="px-mobile py-32 lg:py-48">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">GET in TOUCH</h1>
+        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">GET in TOUCH</h2>
         <Contacts />
       </section>
 
