@@ -10,39 +10,39 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState(NAVIGATIONS[0]);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setVisible(window.scrollY > 100);
+      const scrollY = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setVisible(window.scrollY > 100);
+
+          let currentSection = NAVIGATIONS[0];
+          NAVIGATIONS.forEach((id) => {
+            const section = document.getElementById(id.toLowerCase());
+            if (section && scrollY >= section.offsetTop - section.offsetHeight / 4) {
+              currentSection = id;
+            }
+          });
+          setActiveSection(currentSection);
+
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      let currentSection = NAVIGATIONS[0];
+    document.body.classList.toggle("overflow-hidden", topSheet);
 
-      NAVIGATIONS.forEach((id) => {
-        const section = document.getElementById(id.toLowerCase());
-        if (section && scrollY >= section.offsetTop - section.offsetHeight / 4) {
-          currentSection = id;
-        }
-      });
-
-      setActiveSection(currentSection);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
-  useEffect(() => {
-    if (topSheet) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("overflow-hidden");
     };
   }, [topSheet]);
 

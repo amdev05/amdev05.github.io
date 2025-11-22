@@ -18,15 +18,15 @@ export default function MusicPlayer({ className }) {
   };
 
   useEffect(() => {
-    let timer;
-    if (open) {
-      timer = setTimeout(() => {
-        setOpen(false);
-      }, 8000);
-    }
+    if (!open) return;
+
+    const timer = setTimeout(() => {
+      setOpen(false);
+    }, 8000);
+
     console.log("haloo");
     return () => clearTimeout(timer);
-  }, [play, open]);
+  }, [open, play]);
 
   return (
     <div className={` blury rounded-full p-2 flex items-center gap-4 overflow-hidden transition-all duration-700 ${className} ${open ? "max-w-96" : "max-w-16"}`}>

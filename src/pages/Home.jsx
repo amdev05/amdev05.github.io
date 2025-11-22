@@ -47,12 +47,12 @@ function Home() {
         <Tech props={UTILITIES} />
       </section>
 
-      <section className="px-mobile py-32 lg:py-48" id="activity">
+      <section className="px-mobile py-32" id="activity">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">ACTIVITY</h1>
         <Activity />
       </section>
 
-      <section id="contacts" className="px-mobile py-32">
+      <section id="contacts" className="px-mobile py-32 lg:py-48">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">GET in TOUCH</h1>
         <Contacts />
       </section>

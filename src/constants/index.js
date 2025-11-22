@@ -66,7 +66,7 @@ export const EXPERIENCES = [
     role: "Informatics Engineering Student",
     company: "Unikom",
     description: `A dedicated Informatics Engineering student at Universitas Komputer Indonesia, specializing in web development, programming, algorithm design, and continuously improving skills in modern frameworks and technologies.`,
-    technologies: ["JavaScript", "Python", "Java", "PHP"],
+    technologies: ["JavaScript", "Python", "Java", "Algorithm", "Database", "UI/UX", "Networking", "Operating Systems"],
   },
   {
     year: "2025 - Present",
@@ -80,7 +80,7 @@ export const EXPERIENCES = [
     role: "Frontend Developer",
     company: "Amdev",
     description: `A passionate Frontend Developer at AMDEV, crafting visually appealing and interactive websites, focusing on delivering seamless user experiences and maintaining clean, efficient, and scalable code in every project.`,
-    technologies: ["TailwindCss", "JavaScript", "React", "Vite"],
+    technologies: ["TailwindCss", "React", "Firebase"],
   },
 ];
 

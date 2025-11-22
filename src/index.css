@@ -27,6 +27,7 @@
   @apply md:mx-auto w-full lg:max-w-global md:max-w-3xl;
 }
 .blury {
+  --webkit-backdrop-filter: blur(20px);
   @apply inset-shadow-xs bg-neutral-500/20 inset-shadow-neutral-400/20 backdrop-blur-xl;
 }
 .pause-spin {
