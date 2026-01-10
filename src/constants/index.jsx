@@ -1,6 +1,7 @@
 // ICONS
-import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaTelegramPlane } from "react-icons/fa";
-import { IoMailOutline } from "react-icons/io5";
+import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaTelegramPlane, FaGlobe } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaPython } from "react-icons/fa";
 import { RiTailwindCssFill, RiOpenaiFill, RiFirebaseFill } from "react-icons/ri";
@@ -23,13 +24,13 @@ export const DataContacts = [
   },
   {
     platform: "Instagram",
-    link: "https://instagram.com/ademuchl17",
-    icon: <FaInstagram />,
+    link: "https://instagram.com/amdev05",
+    icon: <RiInstagramFill />,
   },
   {
     platform: "Email",
     link: "mailto:ademuch80@gmail.com",
-    icon: <IoMailOutline />,
+    icon: <IoMail />,
   },
   {
     platform: "Telegram",
@@ -43,6 +44,38 @@ export const DataContacts = [
   },
 ];
 
+export const DATALINKS = [
+  {
+    platform: "My Portfolio",
+    link: "https://amdev05.vercel.app",
+    icon: <FaGlobe />,
+  },
+  {
+    platform: "GitHub",
+    link: "https://github.com/amdev05",
+    icon: <FaGithub />,
+  },
+  {
+    platform: "Linkedin",
+    link: "https://www.linkedin.com/in/ade-muchlisidin-43ab99304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    icon: <FaLinkedin />,
+  },
+  {
+    platform: "Email",
+    link: "mailto:ademuch80@gmail.com",
+    icon: <IoMail />,
+  },
+  {
+    platform: "Instagram",
+    link: "https://instagram.com/amdev05",
+    icon: <RiInstagramFill />,
+  },
+  {
+    platform: "Whatsapp",
+    link: "https://wa.me/6285179721795",
+    icon: <RiWhatsappFill />,
+  },
+];
 // ICONS
 
 // IMAGES
